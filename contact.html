@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropveil - Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #4a7c40;
+            --secondary: #e8f4ea;
+            --accent: #6b9e5f;
+            --text: #2d3748;
+            --light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae') center/cover no-repeat;
+        }
+
+        .transition-smooth {
+            transition: all 0.3s ease;
+        }
+
+        .contact-point {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-point h3 {
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form {
+            background-color: var(--secondary);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .submit-btn {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--accent);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://img.icons8.com/color/48/000000/water.png" alt="Dropveil Logo" class="h-10 w-10">
+                    <span class="ml-2 text-2xl font-bold text-green-700">Dropveil</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-green-700 transition-smooth">Home</a>
+                    <a href="privacy.html" class="text-gray-600 hover:text-green-700 transition-smooth">Privacy</a>
+                    <a href="terms.html" class="text-gray-600 hover:text-green-700 transition-smooth">Terms & Conditions</a>
+                    <a href="cookies.html" class="text-gray-600 hover:text-green-700 transition-smooth">Cookies</a>
+                    <a href="contact.html" class="text-green-700 font-medium border-b-2 border-green-700 pb-1" aria-current="page">Contact Us</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-500 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Form Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h1 class="text-4xl font-bold text-center text-green-700 mb-8">Contact Dropveil</h1>
+            
+            <div class="contact-form mb-12">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">Send Us a Message</h2>
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" class="form-input" placeholder="Your name" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="Your email" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" class="form-input" placeholder="Your phone number">
+                    </div>
+                    <div class="mb-4">
+                        <label for="subject" class="form-label">Subject</label>
+                        <select id="subject" class="form-input">
+                            <option value="general">General Inquiry</option>
+                            <option value="service">Service Request</option>
+                            <option value="quote">Request a Quote</option>
+                            <option value="support">Technical Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea id="message" class="form-input" rows="5" placeholder="How can we help?" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <h2 class="text-2xl font-bold text-green-700 mb-4">Our Office</h2>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <p class="mb-4">
+                            <strong>Dropveil Irrigation Services</strong><br>
+                            400 Broome St<br>
+                            New York, NY 10013<br>
+                            United States
+                        </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.017734617124!2d-73.9998474!3d40.7211672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25989b68a6e09%3A0x90392eb4f9b8c1b2!2s400%20Broome%20St%2C%20New%20York%2C%20NY%2010013%2C%20USA!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-green-700 mb-4">Contact Details</h2>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <p class="mb-4">
+                            <strong>Phone:</strong> (123) 456-7890<br>
+                            <strong>Toll Free:</strong> (800) 123-4567<br>
+                            <strong>Fax:</strong> (123) 456-7891
+                        </p>
+                        <p class="mb-4">
+                            <strong>Email:</strong> info@dropveilgardening.com<br>
+                            <strong>Support:</strong> support@dropveilgardening.com<br>
+                            <strong>Sales:</strong> sales@dropveilgardening.com
+                        </p>
+                        <p class="mb-4">
+                            <strong>Business Hours:</strong><br>
+                            Monday - Friday: 8:00 AM - 6:00 PM<br>
+                            Saturday: 9:00 AM - 3:00 PM<br>
+                            Sunday: Closed
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Emergency Contact -->
+            <div class="bg-red-50 border-l-4 border-red-400 p-4 mb-8">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <svg class="h-5 w-5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h3 class="text-lg font-medium text-red-800">Emergency Service</h3>
+                        <div class="mt-2 text-sm text-red-700">
+                            <p>For irrigation emergencies outside business hours, please call our 24/7 emergency line at <strong>(123) 456-7899</strong>. Additional charges may apply for emergency service calls.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Information Points -->
+            <h2 class="text-3xl font-bold text-center text-green-700 mb-8">Frequently Asked Questions</h2>
+            
+            <div class="contact-point">
+                <h3>1. What are your business hours?</h3>
+                <p>Our standard business hours are Monday through Friday from 8:00 AM to 6:00 PM, and Saturdays from 9:00 AM to 3:00 PM. We are closed on Sundays and major holidays. For emergency service outside these hours, please call our 24/7 emergency line at (123) 456-7899. Our customer service team checks voicemails and emails during business hours and will respond promptly to messages left after hours.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>2. How quickly can I get a service appointment?</h3>
+                <p>We typically schedule service appointments within 1-3 business days, depending on technician availability. During peak seasons (spring and summer), wait times may extend to 5-7 business days. Emergency service calls are prioritized and typically addressed within 24 hours. You can check current appointment availability online or by calling our office. We'll do our best to accommodate your preferred date and time whenever possible.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>3. What information should I provide when requesting a quote?</h3>
+                <p>For accurate quotes, please provide your property address, approximate square footage requiring irrigation, water source information, soil type, existing system details (if applicable), preferred irrigation type, and any special requirements. Photos of your property help us understand the scope of work. Be sure to mention if you have water conservation concerns, difficult terrain, or other factors that might affect installation. The more details you provide, the more accurate our estimate will be.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>4. How do I check the status of my service request?</h3>
+                <p>You can check service request status by logging into your account on our website or by calling our customer service line at (123) 456-7890. Provide your service request number or the phone number used when making the request. Our technicians will also send text or email updates about their estimated arrival time. For completed services, you'll receive a satisfaction survey and detailed service report via email.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>5. What payment methods do you accept?</h3>
+                <p>We accept Visa, Mastercard, American Express, Discover, personal checks, and cash. Payment is due upon service completion unless prior credit arrangements have been made. For larger projects, we may require a deposit before work begins. All major credit card payments are processed securely through encrypted payment gateways. Electronic invoices are available upon request, and we offer payment plans for qualifying service packages over $1,000.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>6. Do you offer service contracts or maintenance plans?</h3>
+                <p>Yes, we offer annual maintenance contracts that include seasonal system activation/winterization, monthly inspections, priority scheduling, and discounts on parts and labor. Our maintenance plans are customizable based on your system size and needs. Contract customers receive 10% off additional services and guaranteed response times. Our maintenance team will provide detailed service reports after each visit. Ask our customer service representatives about plan options and pricing.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>7. What areas do you serve?</h3>
+                <p>We primarily service the New York metropolitan area including all five boroughs, Nassau County, and Westchester County. Our service radius extends approximately 50 miles from our Manhattan office. Some rural or extreme outskirts areas may incur additional travel fees. Call our office to confirm coverage for your specific location. We're licensed to operate in New York, New Jersey, and Connecticut, with plans to expand service areas in the near future.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>8. How do I prepare for my scheduled service visit?</h3>
+                <p>Please ensure clear access to all irrigation equipment and water sources. Mark any underground utilities if known. Secure pets and remove any obstacles from work areas. Have your water bills available if discussing conservation. If it's an irrigation system checkup, make note of any problem zones. Our technicians will need access to your water main and/or irrigation controller. For landscaping projects, clearly mark any plants needing special attention.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>9. What warranties do you offer?</h3>
+                <p>All installations come with a 1-year workmanship warranty covering labor and a manufacturer's warranty on parts (typically 2-5 years depending on components). Maintenance plan customers receive extended warranty coverage up to 3 years. Our warranties cover defects in materials and workmanship but not damage from weather, misuse, or unauthorized repairs. Warranty claims require documentation of proper maintenance. We'll explain all warranty terms before beginning your project.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>10. Do I need to be home during service?</h3>
+                <p>You're not required to be home for routine maintenance if we have access to your irrigation system. However, we recommend someone be present for initial consultations, system installations, and complex repairs. For all visits, our technicians will provide arrival notifications and require access to water sources and controller panels. We can arrange lockbox or key code access if you won't be available. Final paperwork and payments can be handled electronically if needed.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>11. How can I save money on water bills with your systems?</h3>
+                <p>Our smart irrigation technologies can reduce outdoor water usage by 30-50% compared to traditional systems. We offer water audits, rain sensors, soil moisture monitors, and weather-based controllers that automatically adjust watering schedules. Many of our clients see a return on investment within 18-24 months through water savings. We can also help you qualify for municipal water conservation rebates that offset upgrade costs. Ask about our water-saving solutions tailored to your landscape.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>12. What makes your company different from competitors?</h3>
+                <p>Dropveil combines 13+ years of irrigation expertise with cutting-edge water conservation technology. Our certified technicians receive 100+ hours of annual training. We use only commercial-grade materials, offer industry-leading warranties, and provide detailed after-service reports. Our smart irrigation solutions integrate with home automation systems, and our customer satisfaction rating exceeds 98%. We're fully licensed, insured, and recognized by professional horticultural associations.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>13. Can you help with irrigation system design?</h3>
+                <p>Absolutely! Our irrigation design services include site analysis, water pressure/flow testing, zoning plans, equipment specification, and water conservation strategies. We'll create a customized system that meets your landscape's needs while maximizing efficiency. Our designs consider plant types, sun exposure, soil conditions, and local water restrictions. For complex projects, we provide 3D renderings and water use projections. Design fees are typically applied toward installation costs if you proceed with our services.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>14. How often should my irrigation system be serviced?</h3>
+                <p>We recommend quarterly maintenance for most residential systems (spring startup, two summer checkups, fall winterization). Commercial systems or those with complex features may need monthly attention. Regular maintenance prevents costly repairs, ensures water efficiency, and prolongs system life. Our technicians inspect sprinklers, valves, controllers, sensors, and water pressure during each visit. Service frequency depends on system age, usage, and local water conditions - we'll advise what's optimal for your situation.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>15. What should I do if my irrigation system is not working?</h3>
+                <p>If your system is not functioning properly, first check for visible issues such as broken sprinkler heads, leaks, or blocked nozzles. Ensure the controller is set correctly and that there are no power issues. If problems persist, contact us for a service appointment. Our technicians can diagnose and repair issues efficiently. We recommend regular system checks to prevent major malfunctions. For urgent issues, please call our emergency line for immediate assistance.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>16. Do you provide services for commercial properties?</h3>
+                <p>Yes, we specialize in irrigation solutions for both residential and commercial properties. Our commercial services include large-scale irrigation system design, installation, and maintenance. We work with property managers, landscape architects, and business owners to create efficient systems that meet specific needs. Our team is experienced in handling complex projects and can provide tailored solutions for parks, sports fields, and commercial landscapes. Contact us for a consultation to discuss your commercial irrigation needs.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>17. How do you ensure water conservation?</h3>
+                <p>We prioritize water conservation in all our irrigation designs. Our systems utilize smart technology, including weather-based controllers and soil moisture sensors, to optimize watering schedules. We also offer rainwater harvesting solutions and drought-resistant landscaping options. Our team conducts water audits to identify areas for improvement and recommends practices that reduce water waste. By implementing our systems, clients can significantly lower their water usage while maintaining healthy landscapes.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>18. Can I upgrade my existing irrigation system?</h3>
+                <p>Yes, we can upgrade your existing system to improve efficiency and performance. Upgrades may include installing smart controllers, adding drip irrigation, replacing outdated components, or expanding coverage areas. Our technicians will assess your current system and recommend the best options for enhancement. Upgrading can lead to significant water savings and improved plant health. We offer financing options for larger upgrade projects to make the process more affordable.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>19. What types of irrigation systems do you install?</h3>
+                <p>We install a variety of irrigation systems, including drip irrigation, sprinkler systems, and subsurface irrigation. Each system type is tailored to the specific needs of your landscape, taking into account plant types, soil conditions, and water availability. Our team will help you choose the best system for your property, ensuring optimal coverage and efficiency. We also provide retrofitting services for existing systems to incorporate modern technology and improve performance.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>20. How do I maintain my irrigation system?</h3>
+                <p>Regular maintenance is key to keeping your irrigation system functioning properly. We recommend seasonal check-ups to inspect and adjust your system. This includes checking for leaks, cleaning filters, adjusting sprinkler heads, and ensuring controllers are programmed correctly. You can also perform simple tasks like clearing debris from sprinkler heads and monitoring water usage. Our maintenance plans provide comprehensive service to ensure your system operates efficiently year-round.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>21. What should I do if I have a leak?</h3>
+                <p>If you suspect a leak, turn off the water supply to your irrigation system immediately to prevent further damage. Check for visible signs of water pooling or wet spots in your yard. Contact us for a professional assessment and repair. Our technicians are trained to locate and fix leaks quickly, minimizing water loss and damage to your landscape. Regular inspections can help identify potential leaks before they become major issues.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>22. Can you help with landscaping as well?</h3>
+                <p>Yes, we offer landscaping services in addition to irrigation. Our team can assist with landscape design, installation, and maintenance. We focus on creating beautiful, sustainable landscapes that complement your irrigation system. Our landscaping services include planting, mulching, hardscaping, and ongoing maintenance. We work closely with clients to ensure their vision is realized while promoting water conservation and environmental sustainability.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>23. What is your cancellation policy?</h3>
+                <p>We require at least 24 hours' notice for cancellations or rescheduling of service appointments. Cancellations made with less than 24 hours' notice may incur a fee. For emergency services, we understand that situations can arise unexpectedly, and we will work with you to accommodate your needs. If you need to cancel or reschedule, please contact our office as soon as possible to avoid any charges.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>24. How do you handle customer complaints?</h3>
+                <p>We take customer complaints seriously and strive to resolve issues promptly. If you have a concern, please contact our customer service team directly. We will listen to your feedback, investigate the issue, and work towards a satisfactory resolution. Our goal is to ensure every customer is happy with our services. We also encourage feedback to help us improve our processes and service quality.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>25. Do you offer financing options?</h3>
+                <p>Yes, we offer financing options for larger projects to make our services more accessible. Financing plans can be tailored to fit your budget and needs. We partner with reputable financing companies to provide flexible payment options. During your consultation, we can discuss available financing plans and help you choose the best option for your project. Our goal is to ensure you can invest in your landscape without financial strain.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>26. What should I do if I have a question not covered here?</h3>
+                <p>If you have a question that isn't addressed in our FAQs, please reach out to us directly. Our customer service team is available to assist you with any inquiries. You can contact us via phone, email, or through the contact form on our website. We value your questions and feedback, and we are here to help you with any information you need regarding our services.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>27. How do I stay updated on your services and promotions?</h3>
+                <p>You can stay updated by subscribing to our newsletter on our website. We regularly send out information about new services, promotions, and tips for maintaining your irrigation system. You can also follow us on social media platforms for the latest updates and special offers. We encourage our customers to engage with us online and share their experiences with our services.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>28. What is your policy on privacy and data protection?</h3>
+                <p>We take your privacy seriously and are committed to protecting your personal information. Our privacy policy outlines how we collect, use, and safeguard your data. We do not sell or share your information with third parties without your consent, except as required by law. You can review our privacy policy on our website for more details on how we handle your information and your rights regarding your data.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>29. Can I request a service quote online?</h3>
+                <p>Yes, you can request a service quote online through our website. Simply fill out the quote request form with your details, and our team will get back to you within 24 hours with an estimate. Providing as much information as possible will help us give you a more accurate quote. You can also call our office for immediate assistance with your quote request.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>30. What types of plants are best for water conservation?</h3>
+                <p>Drought-resistant plants, native species, and xeriscaping techniques are excellent for conserving water. These plants are adapted to local climates and require less water once established. We can provide recommendations for suitable plants based on your landscape and irrigation system. Incorporating these plants into your landscape design can significantly reduce water usage while maintaining beauty and functionality.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>31. How can I improve my soil for better irrigation?</h3>
+                <p>Improving soil health is crucial for effective irrigation. Consider adding organic matter, such as compost, to enhance soil structure and water retention. Conducting a soil test can help identify nutrient deficiencies and pH levels. We can provide soil amendment recommendations based on your specific soil conditions. Healthy soil promotes better plant growth and reduces the need for excessive watering.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>32. What is the best time to water my plants?</h3>
+                <p>The best time to water is early morning or late afternoon when temperatures are cooler, reducing evaporation. Watering during these times allows plants to absorb moisture effectively. We can help you set up a watering schedule that aligns with your landscape's needs and local weather conditions. Our smart irrigation systems can automatically adjust watering times based on real-time weather data.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>33. How do I know if my irrigation system is working efficiently?</h3>
+                <p>Regular monitoring of your system is essential for efficiency. Look for signs of overwatering, such as pooling water or soggy areas, and check that all sprinkler heads are functioning correctly. We recommend periodic system audits to assess performance and make necessary adjustments. Our technicians can provide detailed reports on system efficiency and suggest improvements to optimize water usage.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>34. Can I install an irrigation system myself?</h3>
+                <p>While DIY installation is possible, we recommend hiring professionals for optimal results. Proper installation requires knowledge of local regulations, water pressure calculations, and system design. Mistakes can lead to inefficient watering and costly repairs. Our team is experienced in installing systems that meet your landscape's needs while ensuring compliance with local codes. We offer consultations for those interested in DIY projects.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>35. What are the benefits of a smart irrigation system?</h3>
+                <p>Smart irrigation systems offer numerous benefits, including water savings, reduced utility bills, and improved plant health. These systems use weather data and soil moisture levels to adjust watering schedules automatically. They can be controlled remotely via smartphone apps, allowing for easy management. Our smart systems can also integrate with home automation for added convenience. Investing in smart technology can lead to significant long-term savings and environmental benefits.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>36. How do I prepare my irrigation system for winter?</h3>
+                <p>Winterizing your irrigation system is crucial to prevent damage from freezing temperatures. This process includes draining water from pipes, blowing out lines with compressed air, and insulating exposed components. We offer winterization services to ensure your system is properly prepared for cold weather. Regular winterization can extend the life of your system and prevent costly repairs in the spring.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>37. What should I do if my sprinkler heads are clogged?</h3>
+                <p>If your sprinkler heads are clogged, turn off the system and inspect the heads for debris. Remove and clean the heads with water to clear any blockages. If the problem persists, check the filter and water source for issues. Regular maintenance can prevent clogs from occurring. If you need assistance, our technicians can perform thorough cleaning and maintenance to ensure optimal performance.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>38. How can I reduce runoff from my irrigation system?</h3>
+                <p>To reduce runoff, ensure your system is properly calibrated to match the needs of your plants. Use drip irrigation for targeted watering and avoid overwatering. Implementing rain sensors can help prevent unnecessary watering during wet conditions. We can assess your system and recommend adjustments to minimize runoff and improve water efficiency. Properly designed systems can significantly reduce water waste and promote healthy plant growth.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>39. What are the signs of an irrigation system problem?</h3>
+                <p>Signs of an irrigation problem include uneven watering, dry patches, pooling water, and malfunctioning sprinkler heads. If you notice any of these issues, it's essential to address them promptly to prevent further damage. Regular inspections can help identify problems early. Our team can perform a comprehensive evaluation of your system to diagnose and resolve any issues effectively.</p>
+            </div>
+
+            <div class="contact-point">
+                <h3>40. How can I contact you for more information?</h3>
+                <p>You can contact us through our website's contact form, by phone at (123) 456-7890, or via email at info@dropveilgardening.com. Our customer service team is available to assist you with any questions or concerns. We encourage you to reach out for more information about our services, quotes, or any other inquiries you may have. Your satisfaction is our priority, and we look forward to hearing from you!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-6 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 Dropveil. All rights reserved.</p>
+            <p>Address: 400 Broome St, New York, NY 10013, USA</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>

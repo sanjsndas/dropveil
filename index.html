@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropveil - Soft Watering. Strong Results.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #4a7c40;
+            --secondary: #e8f4ea;
+            --accent: #6b9e5f;
+            --text: #2d3748;
+            --light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae') center/cover no-repeat;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .transition-smooth {
+            transition: all 0.3s ease;
+        }
+
+        .water-drop {
+            animation: drip 4s infinite ease-in-out;
+        }
+
+        @keyframes drip {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+        }
+
+        .testimonial-bg {
+            background: linear-gradient(135deg, var(--secondary) 0%, white 100%);
+        }
+
+        .footer-link:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        .consultation-btn {
+            background: var(--primary);
+            transition: all 0.3s;
+        }
+
+        .consultation-btn:hover {
+            background: var(--accent);
+            transform: scale(1.05);
+        }
+
+        .content-box {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .service-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://img.icons8.com/color/48/000000/water.png" alt="Dropveil Logo" class="h-10 w-10">
+                    <span class="ml-2 text-2xl font-bold text-green-700">Dropveil</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-green-700 font-medium border-b-2 border-green-700 pb-1" aria-current="page">Home</a>
+                    <a href="privacy.html" class="text-gray-600 hover:text-green-700 transition-smooth">Privacy</a>
+                    <a href="terms.html" class="text-gray-600 hover:text-green-700 transition-smooth">Terms & Conditions</a>
+                    <a href="cookies.html" class="text-gray-600 hover:text-green-700 transition-smooth">Cookies</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-green-700 transition-smooth">Contact Us</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-500 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-white min-h-screen flex items-center">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Soft Watering. Strong Results.</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Dropveil provides precision irrigation solutions that gently nourish your garden while conserving water and boosting plant health. Our patented water distribution system ensures every drop counts, delivering moisture exactly where your plants need it most, when they need it most, without wasteful runoff or evaporation that plagues conventional irrigation methods.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <button class="bg-white text-green-700 px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition-smooth">Get Free Consultation</button>
+                <button class="border-2 border-white px-8 py-3 rounded-full font-bold text-lg hover:bg-white hover:text-green-700 transition-smooth">Our Services</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl font-bold text-green-700 mb-6">About Dropveil</h2>
+                    <p class="text-lg mb-4">Founded in 2010 by irrigation specialist Marcus Greenfield, Dropveil has been revolutionizing garden irrigation with our patented gentle watering technology. What began as a small operation serving urban gardens in Brooklyn has grown into the premier irrigation service provider for the entire New York metropolitan area.</p>
+                    <p class="text-lg mb-6">Our name embodies our philosophy - water that gently covers like a veil, nourishing without overwhelming. We've spent over a decade perfecting our approach, combining traditional horticultural knowledge with cutting-edge water conservation technology. Today, we serve hundreds of residential and commercial clients throughout the New York area, helping them achieve lush, healthy landscapes while conserving water through our precision irrigation systems.</p>
+                    <div class="flex items-center mb-4">
+                        <svg class="h-6 w-6 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>13 years of irrigation expertise with over 1,200 successful installations</span>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <svg class="h-6 w-6 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Water-saving technologies that reduce usage by 35-40% compared to conventional systems</span>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <svg class="h-6 w-6 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Award-winning service recognized by the Metropolitan Water Conservation Alliance</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="h-6 w-6 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>100% satisfaction guaranteed with industry-leading 5-year warranty</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <img src="p1.jpeg" alt="Gardener working" class="rounded-lg shadow-xl w-full h-auto">
+                    <p class="text-sm text-gray-500 mt-2">Our founder Marcus Greenfield demonstrates the Dropveil drip irrigation system at a community garden installation in Battery Park.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-green-700 mb-4">Our Comprehensive Irrigation Services</h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto">At Dropveil, we offer a full suite of specialized watering solutions meticulously tailored to your landscape's unique needs, climate conditions, and horticultural requirements. Our certified irrigation specialists provide expert guidance every step of the way.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg shadow-md feature-card transition-smooth overflow-hidden">
+                    <img src="s1.jpeg" alt="Drip Irrigation System" class="service-img">
+                    <div class="p-6">
+                        <div class="text-green-600 mb-4 water-drop">
+                            <svg class="h-12 w-12 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-3">Custom Drip Irrigation Systems</h3>
+                        <p class="text-center">Our precision water delivery systems target plant roots directly with minimal evaporation or runoff, conserving water while promoting healthier plant growth. We design each system specifically for your landscape, considering plant types, sun exposure, soil composition, and slope. Our high-efficiency emitters deliver water slowly at rates from 0.5 to 2 gallons per hour, while our professional-grade tubing resists kinking and UV damage for years of reliable service.</p>
+                        <button class="mt-4 text-green-700 font-medium flex items-center mx-auto hover:underline">
+                            Learn More
+                            <svg class="h-4 w-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg shadow-md feature-card transition-smooth overflow-hidden">
+                    <img src="s2.jpeg" alt="Smart Sprinkler System" class="service-img">
+                    <div class="p-6">
+                        <div class="text-green-600 mb-4">
+                            <svg class="h-12 w-12 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10a1 1 0 01-1.64 0l-7-10A1 1 0 014 7h4V2a1 1 0 011.707-.707L11.3 1.046z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-3">Smart Sprinkler Systems</h3>
+                        <p class="text-center">Our intelligent weather-adaptive controllers automatically adjust watering schedules based on real-time hyperlocal weather data, seasonal changes, and even soil moisture sensors to optimize water usage. The system connects to WiFi and can be controlled remotely via our mobile app, allowing you to make adjustments from anywhere. We offer precision rotary nozzles that reduce misting and wind drift while maintaining excellent coverage, cutting water use by up to 30% compared to conventional spray heads.</p>
+                        <button class="mt-4 text-green-700 font-medium flex items-center mx-auto hover:underline">
+                            Learn More
+                            <svg class="h-4 w-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-lg shadow-md feature-card transition-smooth overflow-hidden">
+                    <img src="s3.jpeg" alt="Irrigation Consultation" class="service-img">
+                    <div class="p-6">
+                        <div class="text-green-600 mb-4">
+                            <svg class="h-12 w-12 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-3">Comprehensive Irrigation Consultation</h3>
+                        <p class="text-center">Our expert evaluation of your current irrigation system includes detailed water audits, efficiency scoring, and personalized recommendations for improvements tailored to your landscape's specific needs. We assess water pressure, distribution uniformity, precipitation rates, and system longevity before creating a customized water conservation plan. The consultation includes a 15-page report detailing current issues, proposed solutions, equipment recommendations, and projected water savings over 5 years.</p>
+                        <button class="mt-4 text-green-700 font-medium flex items-center mx-auto hover:underline">
+                            Learn More
+                            <svg class="h-4 w-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <div class="flex items-start">
+                        <img src="s4.jpeg" alt="Seasonal Maintenance" class="w-24 h-24 object-cover rounded-lg mr-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-green-700 mb-3">Seasonal System Maintenance</h3>
+                            <p>Our bi-annual maintenance program ensures your irrigation system performs optimally year-round. In spring, we winterize systems by blowing out pipes to prevent freeze damage. In fall, we conduct comprehensive performance testing, nozzle cleaning, pressure checks, and controller optimization to prepare for the growing season ahead.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <div class="flex items-start">
+                        <img src="s5.jpeg" alt="Water Conservation" class="w-24 h-24 object-cover rounded-lg mr-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-green-700 mb-3">Water Conservation Credits</h3>
+                            <p>We help clients navigate available municipal rebates and tax incentives for water-efficient irrigation upgrades. Our team handles all paperwork to secure rebates of up to $500 for qualifying system upgrades. Since 2015, we've helped clients reclaim over $120,000 in conservation credits.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Image Gallery -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-green-700 mb-12">Our Work in Action</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="g1.jpeg" alt="Garden irrigation" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="g2.jpeg" alt="Sprinkler system" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
+                 </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="g3.jpeg" alt="Lush garden" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-green-700 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">Why Property Owners Choose Dropveil</h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto">Our commitment to excellence, sustainable practices, and horticultural expertise sets us apart in the world of professional irrigation services.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="bg-white text-green-700 h-16 w-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Rapid Professional Installation</h3>
+                    <p>Our experienced teams complete most installations in a single day with minimal disruption to your property. We pride ourselves on our efficiency and attention to detail, ensuring that your irrigation system is set up correctly and ready to perform from day one.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="bg-white text-green-700 h-16 w-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Cost Effective Solutions</h3>
+                    <p>Our systems typically pay for themselves in water savings within 2-3 growing seasons. By utilizing advanced technology and efficient design, we help you save money on your water bills while maintaining a vibrant landscape.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="bg-white text-green-700 h-16 w-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Premium Quality Materials</h3>
+                    <p>We use only commercial-grade components designed to withstand years of sun, rain, and freezing temperatures. Our systems are built to last, ensuring that your investment continues to provide value for years to come.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Testimonials Section -->
+    <section class="py-20 testimonial-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-green-700 mb-12">What Our Clients Say</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-lg italic mb-4">"Dropveil transformed my garden! The irrigation system is efficient and my plants have never looked better! The team was professional and knowledgeable, guiding me through every step of the process."</p>
+                    <h4 class="font-bold text-green-700">- Sarah J.</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-lg italic mb-4">"Professional service and great results. Highly recommend Dropveil for anyone looking to improve their garden! Their attention to detail and commitment to customer satisfaction is unmatched."</p>
+                    <h4 class="font-bold text-green-700">- Mark T.</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-lg italic mb-4">"The team was knowledgeable and friendly. They helped me choose the right system for my needs! I appreciate their follow-up service to ensure everything is working perfectly."</p>
+                    <h4 class="font-bold text-green-700">- Emily R.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-green-700 mb-12">Gardening Tips for Optimal Growth</h2>
+            <ul class="list-disc list-inside space-y-4">
+                <li>Water early in the morning to reduce evaporation and ensure your plants receive adequate moisture throughout the day.</li>
+                <li>Use mulch to retain moisture and suppress weeds, which can compete with your plants for nutrients and water.</li>
+                <li>Choose native plants that require less water and are better adapted to your local climate, reducing maintenance and irrigation needs.</li>
+                <li>Regularly check your irrigation system for leaks, clogs, and proper operation to maintain efficiency and prevent water waste.</li>
+                <li>Adjust your watering schedule based on the season and weather conditions to ensure your plants receive the right amount of water.</li>
+                <li>Consider using rain barrels to collect and utilize rainwater for irrigation, promoting sustainability and reducing water costs.</li>
+                <li>Incorporate companion planting to enhance growth and deter pests naturally, creating a healthier garden ecosystem.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-green-700 mb-12">Disclaimer</h2>
+            <p class="text-lg text-center">The information provided on this website is for general informational purposes only. We do not guarantee the accuracy or completeness of any information on this site. Always consult with a professional before making any decisions regarding your irrigation needs. Individual results may vary based on specific conditions and practices.</p>
+        </div>
+    </section>
+
+    <!-- Customer Satisfaction Section -->
+    <section class="py-20 bg-green-700 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Customer Satisfaction is Our Priority</h2>
+            <p class="text-lg mb-4">At Dropveil, we prioritize our customers' needs and strive to exceed their expectations. Your satisfaction is our top priority, and we are committed to providing the best irrigation solutions tailored to your unique landscape. Our dedicated team is always available to answer your questions and provide ongoing support.</p>
+            <p class="text-lg">Contact us today to learn more about how we can help you achieve a thriving garden!</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-6 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 Dropveil. All rights reserved.</p>
+            <p>Address: 400 Broome St, New York, NY 10013, USA</p>
+        </div>
+    </footer>
+</body>
+</html>
